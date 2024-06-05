@@ -46,6 +46,7 @@ class Vehicle:
             # 속도가 0 이하가 되는 경우 위치 업데이트 및 속도를 0으로 설정
             self.x -= 1 / 2 * self.v * self.v / self.a 
             self.v = 0
+        
         else:
             # 일반적인 위치 및 속도 업데이트
             self.v += self.a * dt
